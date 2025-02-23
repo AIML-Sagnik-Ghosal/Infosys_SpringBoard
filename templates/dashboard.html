@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <a href="/add_course">Add New Course</a>
+    <ul>
+        {% for course in courses %}
+            <li><strong>{{ course[1] }}</strong>: {{ course[2] }} 
+                <button type="button" onclick="window.location.href='/update_course/{{course[0]}}'">Edit</button> 
+                <button type="button" onclick="window.location.href='/deletedb/{{course[0]}}'">Delete</button> 
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>
