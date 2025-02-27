@@ -11,7 +11,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = 'Sagnik Ghosal'  # Replace with your email
 app.config['MAIL_PASSWORD'] = ''  # Use an app password for security
-app.config['MAIL_DEFAULT_SENDER'] = 'noobengineer20@gmail.com'
+app.config['MAIL_DEFAULT_SENDER'] = ''
 mail = Mail(app)
 # Routes
 @app.route('/')
