@@ -35,7 +35,8 @@ background-color: white;
 } 
 input[type="text"],
 input[type="date"],
-input[type="number"] { 
+input[type="number"],
+textarea { 
 padding: 5px 5px; 
 border: 1px solid black; 
 border-radius: 7.5px; 
@@ -45,7 +46,8 @@ transition: border-color 0.3s ease;
 } 
 input[type="text"]:focus, 
 input[type="password"]:focus, 
-input[type="email"]:focus { 
+input[type="email"]:focus,
+textarea:focus { 
 border-color: #6a3de8; 
 } 
 h2 { 
@@ -63,4 +65,15 @@ button{
   color:#e714e3;
   background-color:#0fdac5;
   border: 2px solid #1E90FF;
+}
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+p.success{
+  color: green;
+  font: 1em sans-serif;
+  margin-top: 10%;
 }
